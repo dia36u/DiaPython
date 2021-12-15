@@ -49,3 +49,23 @@ models=['4S','galaxy note 10','redmi note']
 phone(brands[0],models[0])
 phone(brands[1],models[1])
 phone(brands[2],models[2])
+# %%
+
+## Sport Teams
+
+def sport(city,team):
+    print('%s from %s!' %(team,city))
+
+sport(team='ASNL',city='Nancy')
+sport(city='Nancy',team='SLUC')
+sport(team='PSG',city='Paris')
+# %%
+## World langages
+
+def world_langages(country,language):
+    print('In %s the major langage is %s!' %(country.title(),language))
+
+world_langages(country='france',language='français')
+world_langages(language='english',country='USA')
+world_langages(language='german',country='germany')
+

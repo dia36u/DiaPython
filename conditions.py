@@ -20,7 +20,53 @@ print(0>=0.5)
 print(12<11)
 #%%
 ##Tree is a Crowd
+def crowd_test(size):
+    if len(size) > 3:
+      print('There is a lot of people here!') 
+
 names=['jacques','henry','david','paul']
-if names >3:
-    print('There is a lot of people here!')
- 
+crowd_test(names)
+del names[-1]
+del names[-1]
+crowd_test(names)
+# %%
+##Tree is a Crowd - Part 2
+
+def crowd_test(size):
+    if len(size) > 3:
+        print('There is a lot of people here!')
+    else:
+        print('there is not a lot of people here!')
+names=['jacques','henry','david','paul']
+crowd_test(names)
+del names[-1]
+del names[-1]
+crowd_test(names)
+
+# %%
+## Six is a Mob
+
+def crowd_test(nbr_people):
+    if len(nbr_people) > 5:
+        print('We cannot respect barrier gestures here!')
+    elif len(nbr_people) >= 3 and len(nbr_people) < 5:
+        print('there is a lot of people here!')
+    elif len(nbr_people) > 0 and len(nbr_people) <= 2: 
+        print('there is not a lot of people here!')
+    elif len(nbr_people) == 0 :
+        print('the room is empty!')
+
+names=['jacques','henry','david','paul','richard','claire']
+crowd_test(names)
+del names[-1]
+del names[-1]
+crowd_test(names)
+del names[-1]
+crowd_test(names)
+del names[-1]
+crowd_test(names)
+del names[-1]
+crowd_test(names)
+del names[-1]
+crowd_test(names)
+# %%
