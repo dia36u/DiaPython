@@ -48,13 +48,13 @@ crowd_test(names)
 
 def crowd_test(nbr_people):
     if len(nbr_people) > 5:
-        print('We cannot respect barrier gestures here!')
+        print('We cannot respect barrier gestures here! (%sp)' % len(nbr_people))
     elif len(nbr_people) >= 3 and len(nbr_people) < 5:
-        print('there is a lot of people here!')
+        print('there is a lot of people here! (%sp)' % len(nbr_people))
     elif len(nbr_people) > 0 and len(nbr_people) <= 2: 
-        print('there is not a lot of people here!')
+        print('there is not a lot of people here! (%sp)' % len(nbr_people))
     elif len(nbr_people) == 0 :
-        print('the room is empty!')
+        print('the room is empty! (%sp)' % len(nbr_people))
 
 names=['jacques','henry','david','paul','richard','claire']
 crowd_test(names)
